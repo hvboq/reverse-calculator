@@ -5,6 +5,6 @@ class GoodsModel extends Model {
   GoodsModel({
     required super.idx,
     required super.name,
-    required super.imgUri,
+    required super.img,
   });
 }

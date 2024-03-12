@@ -12,7 +12,7 @@ class CharacterModel extends Model {
   CharacterModel({
     required super.idx,
     required super.name,
-    required super.imgUri,
+    required super.img,
     //필요 재화 model
   });
 }
