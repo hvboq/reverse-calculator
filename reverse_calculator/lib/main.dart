@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reverse_calculator/model/main_model.dart';
 import 'package:reverse_calculator/page/input_character_page.dart';
 
 void main() {
@@ -7,6 +8,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  static MainModel mainModel = MainModel();
 
   // This widget is the root of your application.
   @override
@@ -22,7 +24,9 @@ class MyApp extends StatelessWidget {
           title: const Text("릾 육성 계산기"),
           backgroundColor: Colors.orange.shade200,
         ),
-        body: const InputCharacterPage(),
+        body: InputCharacterPage(
+          mainModel: mainModel,
+        ),
         bottomNavigationBar: const BottomAppBar(),
       ),
     );
